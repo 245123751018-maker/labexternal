@@ -1,13 +1,8 @@
-import java.util.Scanner;
-
 class ReverseNumber {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
 
-        int n, rev = 0, r;
-
-        System.out.println("Enter a number:");
-        n = sc.nextInt();
+        int n = Integer.parseInt(args[0]);
+        int rev = 0, r;
 
         while (n > 0) {
             r = n % 10;
@@ -16,7 +11,5 @@ class ReverseNumber {
         }
 
         System.out.println("Reverse of Number is: " + rev);
-
-        sc.close();
     }
 }
